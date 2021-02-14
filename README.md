@@ -4,7 +4,7 @@ Main features:
 - a shopping list with 5 items;
 - a tick-style button for deleting a chosen item;
 - a "Clear All" button for deleting all the items;
-- useState for updating the item list & the number of items to go;
+- useState for updating the item list & removing all the items;
 - useEffect for updating the document title.
 
 
