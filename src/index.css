@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Handlee", cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #278d41;
+    color: #0e0e0e;
+    font-size: 30px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+    align-items: center;
+    background: #86e09d;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 10px solid #ffffff;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    padding: 10px;
+    max-height: 10vh;
+    margin: 5px;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.item h4 {
+    margin-right: 19vw;
+}
+.item img {
+    width: 70px;
+    height: auto;
+}
+.btn-done {
+    height: 50px;
+    width: 50px;
+    margin-right: 1vw;
+    background: url("/src/images/shopping-tick.png");
+    background-size: cover;
+    border: none;
+    transition: transform 0.2s ease;
+}
+.btn-clear {
+    margin-top: 20px;
+    height: 70px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+    color: #fbfbfb;
+    background: #6e6e6e;
+    border: 3px solid #fbfbfb;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+.btn-done:hover,
+.btn-clear:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .item h4 {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    .item img {
+        display: none;
+    }
+}
